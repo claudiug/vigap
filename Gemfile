@@ -19,6 +19,12 @@ gem 'puma'
 group :development, :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+group :production do
+  gem "pg"
 end
 
 group :test do
@@ -27,9 +33,4 @@ group :test do
   gem "capybara"
 end
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
