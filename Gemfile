@@ -15,6 +15,7 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'puma'
+gem 'bootstrap-wysihtml5-rails', '~> 0.3.2.100'
 
 group :development, :test do
   gem "rspec-rails"
