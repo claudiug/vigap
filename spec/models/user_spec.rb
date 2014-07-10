@@ -35,4 +35,16 @@ describe User do
                         email: "@exam", password: "qwe123")
     expect(user).to have(1).errors_on(:email)
   end
+
+  it "is invalid without a password" do
+    user = User.new(first_name: "demo", last_name: "demo1",
+                        email: "email@example.net", password: nil, username: "demo1235")
+    expect(user).to have(2).errors_on(:password)
+  end
+
+  it "is invalid with a short password" do
+    user = User.new(first_name: "demo", last_name: "demo1",
+                        email: "email@example.net", password: "123", username: "demo1235")
+    expect(user).to have(1).errors_on(:password)
+  end
 end
