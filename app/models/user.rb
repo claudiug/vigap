@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  has_one :profile
+  has_many :articles
+  has_many :comments
+  has_many :tags
   has_secure_password
   EMAIL_REGEX = /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/
   validates :email, presence: true, uniqueness: true, format: {with: EMAIL_REGEX}
