@@ -1,7 +1,7 @@
 == README
 
-= Server: puma
+===== Server: puma
 
-= DB: pg
+===== DB: pg
 
-= cache: redis
+===== cache: redis
