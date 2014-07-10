@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true, uniqueness: true, format: {with: EMAIL_REGEX}
 
   def username
-    "#{first_name.capitalize} #{last_name.capitalize}" if first_name.present? || last_name.present?
+    return email if first_name.nil? && last_name.nil?
+    return "#{first_name.try(:capitalize)} #{last_name.try(:capitalize)}" if first_name.present? || last_name.present?
   end
 end
