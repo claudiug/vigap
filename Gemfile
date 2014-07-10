@@ -13,7 +13,7 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'cancancan', '~> 1.8'
 gem 'puma'
 gem 'bootstrap-wysihtml5-rails', '~> 0.3.2.100'
 
