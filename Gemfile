@@ -13,8 +13,10 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'cancancan', '~> 1.8'
+gem 'bootstrap-wysihtml5-rails'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 gem 'puma'
-gem 'bootstrap-wysihtml5-rails', '~> 0.3.2.100'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
