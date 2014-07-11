@@ -1,8 +1,7 @@
-<h3>Post a Comment</h3>
-<p>(Comment form will go here)</p>
+<hr>
 <h3>Post a Comment</h3>
 
-<%= form_for(@comment) do |f| %>
+<%= form_for([@article, @comment]) do |f| %>
   <p>
     <%= f.label :title %><br/>
     <%= f.text_field :title %>

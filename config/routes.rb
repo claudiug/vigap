@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 
   resources :comments
 
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
 end
