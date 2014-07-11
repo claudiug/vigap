@@ -1,5 +1,19 @@
 require 'spec_helper'
 
 describe Comment do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "is valid with all the field valid" do
+
+  end
+
+  it "is invalid with fieldx not present" do
+
+  end
+
+  it "is invalid when the length is over the limit" do
+
+  end
+
+  it "is invalid when the title is not present" do
+
+  end
 end

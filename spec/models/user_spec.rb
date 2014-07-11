@@ -28,6 +28,8 @@ describe User do
     expect(user).to have(2).errors_on(:email)
   end
 
+
+
   it "is invalid with not a proper email format" do
     user = User.create(first_name: "demo", last_name: "demo1",
                         email: "@exam", password: "qwe123")
