@@ -1,0 +1,6 @@
+<h3>Article here</h3>
+<hr>
+<%=@article.text%>
+<h3>Comments</h3>
+<%= render partial: 'articles/comment', collection: @comments %>
+<%= render partial: 'comments/form' %>
