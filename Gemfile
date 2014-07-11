@@ -21,6 +21,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 gem "omniauth-google-oauth2"
+gem 'rails_12factor'
 
 group :development, :test do
   gem "rspec-rails"
