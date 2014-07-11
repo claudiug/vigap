@@ -4,6 +4,8 @@ class Article < ActiveRecord::Base
   has_many :tags, through: :taggings
   belongs_to :user
 
+  validates :title, :text, presence: true
+
   def self.tagged_with(name)
     Tag.find_by(name: name).articles
   end
